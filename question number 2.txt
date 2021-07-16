@@ -1,0 +1,30 @@
+ 2. Write   a   simple   program   that   converts   one   given   data   type  to  another   using   auto
+conversion and casting. Take the values form standard in
+
+
+//implicit conversion
+
+#include<stdio.h>
+int main()
+{
+	int x = 10; 
+	char y = 'a'; 
+	x = x + y;
+	float z = x + 1.0;
+	printf("x = %d, z = %f", x, z);
+	return 0;
+}
+
+//explicit type casting
+
+#include<stdio.h>
+
+int main()
+{
+	double x ;
+	printf("enter the number");
+	scanf("%f",x);
+    int sum = (int)x + 1;
+    printf("sum = %d", sum);
+	return 0;
+}

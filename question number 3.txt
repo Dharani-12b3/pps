@@ -1,0 +1,23 @@
+Write a program for find the max and min from the three 
+numbers
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter the 3 numbers\n");
+	scanf("\n %d %d %d",&a,&b,&c);
+	if (a>b&&a>c)
+	printf("\n%d is the maximum number",a);
+	else if(b>c&&b>a)
+	printf("\n%d is the maximum number",b);
+	else
+	printf("\n%d is the maximum number",c);
+	if(a<c&&a<b)
+	printf("\n%d is the minimum number",a);
+	else if(b<c&&b<a)
+	printf("\n%d is the minimum number",b);
+	else
+	printf("\n%d is the minimum number",c);
+	return 0;
+}
