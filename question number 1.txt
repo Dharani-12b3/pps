@@ -1,0 +1,158 @@
+ 1. Write  a   simple   program  that  prints  the  results  of  all  the   operators  available  in  C
+(including   pre/   post   increment   ,   bitwise   and/or/not   ,   etc.).   Read   required   operand
+values from standard inp
+
+
+
+//arithematic operators
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c,p,e,q,r;
+	printf("enter the a,b :  \n");
+	scanf("%d,%d",&a,&b);
+	c = a+b;
+	printf("addition of numbers is : %d \n",c);
+	p = a-b;
+	printf("subraction of numbers is : %d \n",p);
+	e = a*b;
+	printf("multiplication of numbers is : %d \n",e);
+	q = a/b;
+	printf("division of numbers is : %f \n",q);
+	r = a%b;
+	printf("remainder of numbers is : %d \n",r);
+	return 0;
+}
+
+//assignment operators
+
+#include <stdio.h>
+int main()
+{
+    int a = 5, b;
+
+    b = a;      
+    printf("%d\n", b);
+    b += a;      
+    printf("%d\n", b);
+    b -= a;     
+    printf("%d\n", b);
+    b *= a;     
+    printf("%d\n", b);
+    b /= a;     
+    printf("%d\n", b);
+    b %= a;    
+    printf("%d\n", b);
+
+    return 0;
+}
+
+
+//logical operators
+
+#include <stdio.h>
+int main()
+{
+    int a, b,c,d;
+    printf("enter the a,b,c\n");
+    scanf("%d %d %d %d",&a,&b,&c);
+	d = (a == b) && (c > b);
+    printf("%d \n",d);
+	d = (a == b) && (c < b);
+    printf("%d \n",d);
+	d = (a == b) || (c < b);
+    printf("%d \n",d);
+	d = (a != b) || (c < b);
+    printf("%d \n", d);
+	d = !(a != b);
+    printf("%d \n",d);
+	d = !(a == b);
+    printf("%d \n",d);
+	return 0;
+}
+
+// increment and decrement operators
+
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the a,b numbers:\n");
+    scanf("%d %d",&a,&b);
+    printf("%d \n", ++a);
+    printf("%d \n", --b);
+    printf("%d \n", a++);
+    printf("%d \n", a--);
+	return 0;
+}
+
+
+//relation operators
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,f,h,j;
+	printf("enter a,b : ");
+	scanf("\n%d,%d",&a,&b);
+	c = a>b;
+	printf("%d\n",c);
+	d = a<b;
+	printf("%d\n",d);
+	e = a==b;
+	printf("%d\n",e);
+	f = a>=b;
+	printf("%d\n",f);
+	h = a<=b;
+	printf("%d\n",h);
+	j = a!=b;
+	printf("%d\n",j);
+	return 0;
+
+}
+
+//Sizeof()
+#include<stdio.h>
+int main()
+{
+    	
+    printf("%d\n",sizeof(int));
+    printf("%d\n",sizeof(float));
+    printf("%d\n",sizeof(char));
+    printf("%d\n",sizeof(double));
+    return 0 ;
+	      
+	
+}
+
+//conditional operators
+#include<stdio.h>
+int main()
+{
+	int a,b,max ,min;
+	printf("enter a,b\n");
+	scanf("%d,%d\n",&a,&b);
+	max=(a>b)?a:b;
+    min=(a<b)?a:b;
+    printf("\n%d ",max);
+    printf("%d",min);
+}
+
+
+//Bitwise Operators
+#include<stdio.h>
+int main()
+{
+	int a,b,i;
+	printf("enter the a,b number\n");
+	scanf("%d,%d",&a,&b);
+	printf("\n a & b is %d",a&b);
+	printf("\n a | b is %d",a|b);
+	printf("\n a ^ b is %d",a^b);
+	printf("\n ~a is %d",~a);
+	printf("\n <<a is %d",~a);
+	printf("\n ~a is %d\n",~a);
+	
+}
+
+
