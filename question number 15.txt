@@ -1,0 +1,12 @@
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+     float x,total;
+     printf("Enter number for x:\n");     
+     scanf("%f",&x);
+	 total  = (1-x/2+(x*x)/4-(x*x*x)/6);
+	
+	printf("%f",total);
+}
