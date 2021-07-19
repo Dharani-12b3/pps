@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int sum=1 ,x, n,i;
+	printf("enter the number");
+	scanf("%d",&x);
+	printf("enter the power");
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+		sum+=pow(x,n);
+	}
+	printf("the g.p will be :%d",sum);
+	return 0;
+	
+}
